@@ -1,4 +1,4 @@
-const { Pool } = require('pq');
+const { Pool } = require('pg');
 // env = menyimpan data konfigurasi agar tidak langsung di tulis dalam kode
 // dapat disebut juga variabel 'global'
 
@@ -18,4 +18,5 @@ const pool = new Pool({
     }
     // port: process.env.PGPORT
 });
+
 module.exports = pool;
